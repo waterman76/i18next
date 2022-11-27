@@ -147,7 +147,7 @@ static dispatch_once_t gOnceToken;
             }
         }
         
-        id result = [self t:key options:options];
+        __autoreleasing id result = [self t:key options:options];
         [inv setReturnValue:&result];
     }
     else {
